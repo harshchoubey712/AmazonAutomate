@@ -4,49 +4,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /*
-	// 1. By Locators: OR
-	private By emailId = By.id("email");
-	private By password = By.id("passwd");
-	private By signInButton = By.id("SubmitLogin");
-	private By forgotPwdLink = By.linkText("Forgot your password?111");
+Git Steps for pushing:
 
-	// 2. Constructor of the page class:
-	public AmazonLoginPage(WebDriver driver) {
-		this.driver = driver;
-	}
-
-	// 3. page actions: features(behavior) of the page the form of methods:
-
-	public String getLoginPageTitle() {
-		return driver.getTitle();
-	}
-	
-	
-	
-
-	public boolean isForgotPwdLinkExist() {
-		return driver.findElement(forgotPwdLink).isDisplayed();
-	}
-
-	public void enterUserName(String username) {
-		driver.findElement(emailId).sendKeys(username);
-	}
-
-	public void enterPassword(String pwd) {
-		driver.findElement(password).sendKeys(pwd);
-	}
-
-	public void clickOnLogin() {
-		driver.findElement(signInButton).click();
-	}
-
-	public AccountsPage doLogin(String un, String pwd) {
-		System.out.println("login with: " + un + " and " + pwd);
-		driver.findElement(emailId).sendKeys(un);
-		driver.findElement(password).sendKeys(pwd);
-		driver.findElement(signInButton).click();
-		return new AccountsPage(driver);
-	}
+cd /Users/harshchoubey/eclipse-workspace/AmazonAutomate
+git init 
+git remote add origin "https://github.com/harshchoubey712/AmazonAutomate.git"
+gives repos already exists
+git remote --verbose 
+git remote set-url origin  https://github.com/harshchoubey712/AmazonAutomate.git
+git remote --verbose 
+git status 
+git add .  
+git commit -m "added amazon files to push" 
+git push origin master  
+ 
+ check the changes in remote rep.
 */
 public class AmazonLoginPage {
 
